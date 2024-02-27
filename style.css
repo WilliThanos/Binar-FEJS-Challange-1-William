@@ -1,0 +1,44 @@
+html, body{
+    scroll-behavior: smooth; 
+}
+
+
+
+@media (max-width: 768px) {
+
+    body{
+        background-color: #cbcbcb;
+    }
+
+    /* Tampilkan SVG pada layar smartphone */
+    #svgku {
+      display: none;
+    }
+
+    #svgmu{
+        display: block;
+    }
+  }
+ 
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Tampilkan SVG pada layar iPad */
+    #svgku {
+      display: block;
+    }
+
+    #svgmu{
+        display: none;
+    }
+
+  }
+  
+  @media (min-width: 1025px) {
+    /* Sembunyikan SVG pada layar desktop */
+    #svgku {
+      display: block;
+    }
+
+    #svgmu{
+        display: none;
+    }
+  }
